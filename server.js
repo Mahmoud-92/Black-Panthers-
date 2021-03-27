@@ -14,6 +14,7 @@ require('dotenv').config();
 // Create a server object
 const server = express();
 
+
 // Connect to the database using mongoose
 // Note: make sure to put your connection string!
 const connectionString = process.env.CONNECTION_STRING;
