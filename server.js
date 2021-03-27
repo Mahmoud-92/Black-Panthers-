@@ -75,9 +75,6 @@ server.use(
 
 
 
-server.listen(
-    3001, 
-    () => {
-        console.log('server is running on http://localhost:3001')
-    }
-);
+server.isten(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
