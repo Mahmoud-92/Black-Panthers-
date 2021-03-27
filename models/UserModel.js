@@ -11,14 +11,12 @@ const UserSchema = new mongoose.Schema(
 		emiratesId: { type: String, required: true },
 		dob: { type: String, required: true },
 		phonenum: { type: String, required: true },
-		emiratesId: { type: String, required: true },
 		adress: { type: String, required: true },
 		vehicleType: { type: String, required: true },
-		avatar:{type: String,}
 	}
 
 ),
 
-	UserModel = mongoose.model('User', UserSchema);
+UserModel = mongoose.model('User', UserSchema);
 
 module.exports = UserModel;
